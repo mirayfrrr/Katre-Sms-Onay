@@ -689,18 +689,19 @@ def main():
     app.add_handler(CommandHandler("giveall", give_all_tokens))
     app.add_handler(CommandHandler("broadcast", broadcast_message))
     
-    # Stok komutlarÄ±
+    # Stok komutları
     app.add_handler(CommandHandler("addstock", add_stock))
     app.add_handler(CommandHandler("clearstock", clear_stock))
     app.add_handler(CommandHandler("showstock", show_stock))
     
-    # Ban komutlarÄ±
+    # Ban komutları
     app.add_handler(CommandHandler("ban", ban_user))
     app.add_handler(CommandHandler("unban", unban_user))
     app.add_handler(CommandHandler("banlist", ban_list))
 
-    print("ðŸš€ Bot baÅŸlatÄ±lÄ±yor...")
+    print("🚀 Bot başlatılıyor...")
     app.run_polling(allowed_updates=Update.ALL_TYPES)
+
 
 if __name__ == "__main__":
     main()
